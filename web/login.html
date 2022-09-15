@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-icons-1.5.0/bootstrap-icons.css">
+    <style>
+        body{
+            background-image: url(back4.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        .a{
+            /* border: 2px solid black; */
+            padding-top: 45px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+        }
+        .ram{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            top: -80px;
+            left: 150px;
+        }
+        .row{
+            margin-top: 100px;
+        }
+        label{
+            font-weight: bold;
+            color: white;
+        }
+        a{
+            text-transform: none !important;
+            color: white !important;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+        button{
+            width: 49.4%;
+
+        }
+
+    </style>
+</head>
+<body >
+    <div class="container-full">
+        <div class="row ">
+            <div class="col-4 offset-4 a">
+                <img src="./photo_2022-08-09_12-16-54.jpg" class="card-img card-img-overlay  ram" alt="">
+                <h1 class="text-center " style="color: aqua;">Sign In</h1>
+                <form action="/sign_in" method="post">
+                    <div class="form-group">
+                        <label for="" >Username</label>
+                        <input type="text" name="username" id="" placeholder="username" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="" >Password</label>
+                        <input type="password" name="passwordd"  placeholder="password" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" name="" >
+                        <label for="">I`m not robot</label>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn  btn-primary text-light">Submit</button>
+                        <button  class="btn btn-primary " > <a href="Sign Up.html" id="aa" >Sign Up</a> </button>
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

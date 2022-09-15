@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Login_Registratsiya:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Login_Registratsiya_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Login_Registratsiya/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Login_Registratsiya" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.checkerframework:checker-qual:3.5.0" />
+          <element id="library" level="project" name="Maven: org.postgresql:postgresql:42.4.0" />
+        </element>
+      </element>
+      <element id="library" level="project" name="Maven: javax.servlet:servlet-api:3.0-alpha-1" />
+      <element id="library" level="project" name="Maven: org.postgresql:postgresql:42.4.0" />
+    </root>
+  </artifact>
+</component>

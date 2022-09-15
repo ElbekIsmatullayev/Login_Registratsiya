@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-icons-1.5.0/bootstrap-icons.css">
+    <style>
+        .a{
+            background-image: url(back2.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            /* padding-bottom: 100px; */
+            margin-bottom: 50px;
+        }
+        .b{
+            background-color:rgba(0, 0, 0, 0.5);
+            padding-bottom: 15px;
+            border-radius: 10px;
+            border: 3px solid ;
+            /* box-shadow: inset 0px 0px 15px 10px blueviolet; */
+
+            animation-name: anim1;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-duration: 3s;
+        }
+        a{
+            color: white;
+        }
+        a:hover{
+            text-decoration: none;
+            color: white;
+        }
+        label{
+            font-weight: bold;
+            color: white;
+        }
+        input{
+            border: 3px solid rgb(0, 255, 13) !important;
+            background-color: aqua !important;
+            box-shadow: inset 0px 0px 15px 10px blueviolet;
+
+        }
+        input:hover{
+            border-color: red !important;
+        }
+        button{
+            width: 200px;
+        }
+
+
+        @keyframes anim1{
+            0%{
+                border-color: aqua;
+            }
+            25%{
+                border-color: yellow;
+            }
+            50%{
+                border-color: red;
+            }
+            100%{
+                border-color: orange;
+            }
+        }
+        
+    </style>
+</head>
+<body class="a">
+    <div class="container-full" >
+        <div class="row ">
+            <div class="col-4 offset-4  mt-4 b ">
+                <h1 class="text-center " style="color: blue;">Sign up</h1>
+                <form action="/sign_up" method="post" class="">
+                    
+                    <div class="form-group">
+                        <label for="">First name</label>
+                        <input type="text" name="f_name" class="form-control border-top-0 border-left-0 border-right-0" placeholder="first name" id="">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Last name</label>
+                        <input type="text" name="l_name" class="form-control border-top-0 border-left-0 border-right-0" placeholder="last name" id="">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Email</label>
+                        <input type="email" name="email" class="form-control border-top-0 border-left-0 border-right-0" placeholder="email" id="">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Password</label>
+                        <input type="password" name="password1" class="form-control border-top-0 border-left-0 border-right-0" placeholder="password" id="">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Password Confermation</label>
+                        <input type="password" name="password2" class="form-control border-top-0 border-left-0 border-right-0" placeholder="password confermation" id="">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Phone numbers</label>
+                        <input type="text" name="phone" class="form-control border-top-0 border-left-0 border-right-0" placeholder="phone numbers" id="">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="checkbox"  style="box-shadow: none !important;">
+                        <label for="">I`m not a robot</label>
+                    </div>
+
+                    <div class="">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button  class="btn btn-primary ml-2"><a href="login.html">Sign in</a>  </button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
